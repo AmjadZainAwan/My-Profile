@@ -4,7 +4,7 @@
 }
 .navbar{
     background-color: rgb(255, 255, 255);
-    height: 70px;
+    height: 60px;
     width: 95%;
     margin: auto;
     display: flex;
@@ -18,21 +18,50 @@
     font-size: 50px;
     background-size: cover;
 }
-.nav-elemant{
-    display: inline;
-    text-align: right;
+
+.nav-elemant ul {
+    list-style: none;
 }
-.nav-elemant a {
+.nav-elemant ul li {
+    display: inline-block;
+    position: relative;
+ }
+ .nav-elemant ul li a{
+    display: block;
+    padding: 10px 15px;
     text-decoration: none;
-    margin-right: 25px;
-    font-weight: 500;
+    text-align: center;
+ }
+ .drop il{
+    display: block;
+}
+ .drop {
+    width: 200%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: left;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.076);;
+    background-color: rgb(255, 255, 255);
+}
+.nav-elemant a{
     transition: transform .2s;
 }
-.nav-elemant a:hover {
-    
+a:hover{
+    color: red;
+    transform: scale(1.2);
+}
+a i:hover{
     color: red;
 }
-.nav-elemant a:hover {
-    transform: scale(1.3); 
-    
+ li:hover ul.drop  {
+    display: block;
+}
+
+/* hero */
+
+.hero{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(219, 219, 219);
 }
