@@ -1,0 +1,38 @@
+*{
+    font-family: sans-serif;
+    color: black;
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    background-image:url(Image/logo.png) ;
+    width: 150px;
+    height:45px ;
+    font-size: 50px;
+    background-size: cover;
+}
+.nav-elemant{
+    display: inline;
+    text-align: right;
+}
+.nav-elemant a {
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 500;
+    transition: transform .2s;
+}
+.nav-elemant a:hover {
+    
+    color: red;
+}
+.nav-elemant a:hover {
+    transform: scale(1.3); 
+    
+}
