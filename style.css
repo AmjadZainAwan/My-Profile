@@ -1,6 +1,8 @@
 *{
-    font-family: sans-serif;
+    font-family:    sans-serif;
     color: black;
+    margin: 0px;
+    padding: 0px;
 }
 .navbar{
     background-color: rgb(255, 255, 255);
@@ -34,9 +36,9 @@
  }
  .drop il{
     display: block;
-}
+}   
  .drop {
-    width: 200%;
+    width: 190%;
     position: absolute;
     z-index: 999;
     display: none;
@@ -64,4 +66,38 @@ a i:hover{
     width: 100%;
     height: 550px;
     background-color: rgb(219, 219, 219);
+  
+}
+.bg-img{
+    background-image: url(Image/hero-Bg.jpg);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero-kv{
+    background-image: url(Image/hero-kv.png);
+    width: 31%;
+    height: 550px;
+    align-items: center;
+}
+.hero-text{
+    font-size: 2.5rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 9%;
+    
+}
+.hero-text h1{
+    font-size: 5rem;
+    color: rgb(220, 19, 19);
+    margin: -15px;
+}
+span .h1{
+    color: black;
+}
+.hero-text .Eqic {
+    color: rgb(220, 19, 19);
+    font-weight: bolder;
+    text-decoration: underline;
 }
