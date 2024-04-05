@@ -75,19 +75,36 @@ a i:hover{
     display: flex;
     justify-content: space-evenly;
 }
+@keyframes slideInRight {
+    from {
+        transform: translateX(700px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
 .hero-kv{
     background-image: url(Image/hero-kv.png);
-    width: 31%;
+    width: 600px;
     height: 550px;
     align-items: center;
+    animation: slideInRight 1s ease-in 0s ;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-700px);
+    }
+    to {
+        transform: translateX(0px);
+    }
 }
 .hero-text{
     font-size: 2.5rem;
     justify-content: center;
     text-align: center;
-    margin-top: 9%;
-    
-}
+    padding-top: 12rem;
+    animation: slideInLeft 1s ease-in 0s ;
+  }
 .hero-text h1{
     font-size: 5rem;
     color: rgb(220, 19, 19);
@@ -100,4 +117,141 @@ span .h1{
     color: rgb(220, 19, 19);
     font-weight: bolder;
     text-decoration: underline;
+}
+
+/* main */
+.services{
+    width: 100%;
+    height: 100%;
+
+}
+.Ser-button{
+    width: 50px;
+    height: 50px;
+    color:white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 18px;
+    box-sizing: border-box;
+    margin-left:97%;
+    margin-top: -60px;
+}
+.Ser-button i{
+    color: white;
+}
+.Ser-button:hover{
+    background-color: rgb(220, 19, 19);
+}
+
+@keyframes slideInLefth {
+    from {
+        transform: translateX(-55%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.services h1 {
+    color:rgb(220, 19, 19);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 5rem;
+    animation: slideInLefth 1s ease-in 0s ;
+}
+
+/* SMM */
+@keyframes slideInLefts {
+    from {
+        transform: translateX(-80%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.black{
+    height: 350px;
+    width: 60%;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    animation: slideInLefts 1s ease-out 0s ;
+}
+.black .text{
+   margin-left: 4%;
+}
+.black h2{
+    padding-top:100px;
+    color: white;
+}
+.black p{
+    padding-top:50px;
+    color: white;
+}
+.black a{
+    padding-top:20px;
+    color: rgb(191, 191, 191);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.black i{
+    padding-top:20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.black img{
+    height: 350px;
+    margin-left:2%;
+    margin-right: 9px;
+    filter: grayscale(100%);
+    background-size: cover;
+}
+/* Branding */
+@keyframes slideInRigthS {
+    from {
+        transform: translateX(80%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.red{
+    height: 350px;
+    width: 60%;
+    margin: auto;
+    background-color: rgb(220, 19, 19);
+    color: white;
+    display: flex;
+    animation: slideInRigthS 1s ease-out 0s ;
+}
+.red .text{
+   margin-left: 4%;
+   margin-right: 2%;
+}
+.red h2{
+    padding-top:100px;
+    color: white;
+}
+.red p{
+    padding-top:50px;
+    color: white;
+}
+.red a{
+    padding-top:20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.red i{
+    padding-top:20px;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+.red img{
+    height: 350px;
+   
+    filter: grayscale(100%);
+    background-size: cover;
 }
